@@ -22,7 +22,7 @@ headers = {
 }
 notf = input("Notif : ")
 # response = requests.get('https://www.zone-h.org/archive/notifier=1915', cookies=cookies, headers=headers)
-for i in range(33, 40):
+for i in range(1, 50):
     dz = requests.get('https://www.zone-h.org/archive/notifier=' + notf +"/page=" + str(i), cookies=cookies)
     dzz = dz.content.decode('utf-8')  # Décodez le contenu ici
     print('https://www.zone-h.org/archive/notifier=' + notf +"/page=" + str(i))
